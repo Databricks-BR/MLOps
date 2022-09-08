@@ -34,6 +34,8 @@ Muitas ferramentas para ML não foram projetadas para serem abertas; por exemplo
 
 Para atender aos requisitos do MLOps, a Databricks construiu sua abordagem em cima da arquitetura Lakehouse, que unificam os recursos de data lakes e data warehouses em uma única arquitetura, onde essa simplificação é possível usando formatos abertos e APIs que alimentam os dois tipos de cargas de trabalho de dados. Analogamente, para MLOps, oferecemos uma arquitetura mais simples porque construímos MLOps em torno de padrões de dados abertos.
 
+<img src='https://raw.githubusercontent.com/Databricks-BR/MLOps/main/images/databricks_lakehouse.png' width='800px'></img>
+
 ## Principais benefícios do MLOps com o LAKEHOUSE
 
 * **Processos operacionais**  - Nossa abordagem estende as ideias de DevOps ao ML, definindo uma semântica clara para o que significa "mover para produção" para código, dados e modelos. As ferramentas de DevOps e os processos de CI/CD existentes podem ser reutilizados para gerenciar o código para pipelines de ML. Computação de recursos, inferência e outros pipelines de dados seguem o mesmo processo de implantação do código de treinamento do modelo, simplificando as operações. Um serviço designado — o MLflow Model Registry — permite que o código e os modelos sejam atualizados independentemente, resolvendo o principal desafio de adaptar os métodos DevOps ao ML.
