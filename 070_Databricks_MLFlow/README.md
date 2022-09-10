@@ -1,3 +1,5 @@
+<img src='https://raw.githubusercontent.com/Databricks-BR/MLOps/main/images/mlfow_logo.png' width='200px'></img>
+
 ## MLflow: uma plataforma aberta de aprendizado de máquina
 O MLflow é inspirado em plataformas de ML existentes, mas foi projetado para ser aberto em dois sentidos:
 
@@ -14,6 +16,7 @@ O MLflow é organizado em quatro componentes: Tracking , Projects , Models e Mod
 
 A filosofia principal do MLflow é colocar o mínimo possível de restrições em seu fluxo de trabalho: ele foi projetado para funcionar com qualquer biblioteca de aprendizado de máquina, determinar a maioria das coisas sobre seu código por convenção e exigir alterações mínimas para integrar a uma base de código existente. Ao mesmo tempo, o MLflow visa pegar qualquer base de código escrita em seu formato e torná-la reproduzível e reutilizável por vários cientistas de dados. Nesta página, descrevemos um fluxo de trabalho de ML típico e onde o MLflow se encaixa.
 
+<img src='https://raw.githubusercontent.com/Databricks-BR/MLOps/main/images/mlflow_componentes.png' width='700px'></img>
 
 
 ## MLflow Tracking
