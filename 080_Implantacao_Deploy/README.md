@@ -20,7 +20,7 @@ inicialmente, no ambiente de desenvolvimento como parte do desenvolvimento do mo
 no preparo (em um subconjunto limitado de dados) como parte de testes de integração e no ambiente de produção 
 (em dados de produção completos) para produzir o modelo final.
 
-<img src='https://raw.githubusercontent.com/Databricks-BR/MLOps/main/images/mlops_deploy_code.png' width='700px'></img>
+<img src='https://raw.githubusercontent.com/Databricks-BR/MLOps/main/images/mlops_deploy_code.png' width='800px'></img>
 
 ### Vantagens:
 
@@ -33,7 +33,8 @@ Ambos passam por testes de integração no preparo.
 
 ### As desvantagens:
 
-A curva de aprendizado para os cientistas de dados entregarem código aos colaboradores pode ser íngreme. Modelos de projeto e fluxos de trabalho predefinidos são úteis.
+A curva de aprendizado para os cientistas de dados entregarem código aos colaboradores pode ser íngreme. 
+Modelos de projeto e fluxos de trabalho predefinidos são úteis.
 Também nesse padrão, cientistas de dados devem ser capazes de examinar os resultados do treinamento do ambiente de produção, pois eles têm conhecimento para identificar e corrigir problemas específicos de ML.
 
 Se sua situação exigir que o modelo seja treinado no preparo do conjunto de dados de produção completo, você poderá usar uma abordagem híbrida implantando código para preparo, treinando o modelo e implantando o modelo em produção. Essa abordagem economiza custos de treinamento na produção, mas adiciona custo de operação no preparo.
@@ -46,10 +47,11 @@ O artefato é testado no ambiente de preparo antes de ser implantado em produç�
 Essa opção poderá ser considerada se uma ou mais das seguintes situações se aplicar:
 
 * O treinamento do modelo é muito caro ou difícil de reproduzir.
-* Todo o trabalho é feito em um só workspace do Azure Databricks.
+* Todo o trabalho é feito em um só workspace do Databricks.
 * Você não está trabalhando com repositórios externos ou um processo de CI/CD.
 
-<img src='https://raw.githubusercontent.com/Databricks-BR/MLOps/main/images/mlops_deploy_models.png' width='700px'></img>
+
+<img src='https://raw.githubusercontent.com/Databricks-BR/MLOps/main/images/mlops_deploy_models.png' width='800px'></img>
 
 
 ### Vantagens:
