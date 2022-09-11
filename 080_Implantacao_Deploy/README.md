@@ -1,5 +1,5 @@
 
-## Padrões de implantação de modelo (Deploy Models)
+## Padrões de implantação de modelo (produtização)
 
 A natureza assíncrona das alterações em modelos e código significa 
 que há vários padrões possíveis que um processo de desenvolvimento de ML pode seguir.
@@ -19,6 +19,8 @@ O modelo é treinado em cada ambiente:
 inicialmente, no ambiente de desenvolvimento como parte do desenvolvimento do modelo, 
 no preparo (em um subconjunto limitado de dados) como parte de testes de integração e no ambiente de produção 
 (em dados de produção completos) para produzir o modelo final.
+
+<img src='https://raw.githubusercontent.com/Databricks-BR/MLOps/main/images/mlops_deploy_code.png' width='700px'></img>
 
 ### Vantagens:
 
@@ -46,6 +48,9 @@ Essa opção poderá ser considerada se uma ou mais das seguintes situações se
 * O treinamento do modelo é muito caro ou difícil de reproduzir.
 * Todo o trabalho é feito em um só workspace do Azure Databricks.
 * Você não está trabalhando com repositórios externos ou um processo de CI/CD.
+
+<img src='https://raw.githubusercontent.com/Databricks-BR/MLOps/main/images/mlops_deploy_models.png' width='700px'></img>
+
 
 ### Vantagens:
 
